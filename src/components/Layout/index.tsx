@@ -150,7 +150,7 @@ export default function Layout({children}) {
     {/* Title End */}
     <div className="flex w-full lg:px-12 lg:mt-12 pr-3 justify-between lg:mb-11 mb-5">
           <p className="text-blue-900 text-4xl font-bold">
-        {page.name}
+        {history.location.pathname === "/" ? "Dashboard" : page.name}
           </p>
           <div className="md:flex hidden">
             <div className=" p-3 rounded-full bg-white mr-5">
