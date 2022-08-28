@@ -800,6 +800,8 @@ module.exports = {
       max: 'max-content',
       m_w: "813px",
       m_f: "436px",
+      rectangle: "417px",
+      min_rectangle: "281px"
     }),
     zIndex: {
       auto: 'auto',
@@ -974,5 +976,12 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    // require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
+    require('tailwindcss-children'),
+    require('@tailwindcss/custom-forms')
+  ],
 }

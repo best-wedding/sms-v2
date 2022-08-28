@@ -14,11 +14,11 @@ export default function Stats() {
     { name: "Foods", icon: ShoppingBagIcon, color: "blue-900", mr: "", value: "32k" },
   ];
   return (
-    <div className="lg:bg-white lg:h-44 w-full rounded-2xl lg:flex lg:p-12 grid grid-cols-1 gap-3">
+    <div className="lg:h-auto w-full rounded-2xl lg:grid-cols-2 xl:grid-cols-2 lg:p-12 grid grid-cols-1 gap-3 items-stretch">
         {
             DashboardStats.map((stat, i)=>(
-      <div className={`flex lg:mr-${stat.mr} bg-white rounded-2xl lg:p-0 p-8`} key={i}>
-        <div className={`rounded-full h-20 w-20 border-2 border-${stat.color} bg-${stat.color} flex items-center justify-center`}>
+      <div className={`flex lg:mr-${stat.mr} bg-white rounded-2xl lg:p-8 p-8 w-full`} key={i}>
+        <div className={`rounded-full h-20 w-20 border-2 border-white bg-${stat.color} flex items-center justify-center ring-2 ring-${stat.color}`}>
           <stat.icon className="text-white h-10 w-10" />
         </div>
         <div className="flex flex-col ml-7">
