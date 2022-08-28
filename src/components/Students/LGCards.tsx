@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function LGCards({data}) {
   return (
-    <div className="hidden lg:grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4 mb-10">
+    <div className="hidden md:grid grid-cols-1 xl:hidden lg:grid-cols-3 md:grid-cols-2 gap-4 mb-10">
       {
         data?.map((student, i)=>(
           <div className=" rounded-px20 py-8 bg-white mt-10 flex flex-col items-center col-span-1 w-full  transform transition-all duration-500 hover:scale-110 shadow hover:shadow-lg" key={i}>
